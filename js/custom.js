@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   $(window).load(function(){
   $(".typing").typed({
-      strings: ["I'm a Student.", "I'm an Engineer.", "I'm a Dreamer. I could be Anything..."],
+      strings: ["Once you stop learning", "you start dying."],
       typeSpeed: 50
     });
    });
