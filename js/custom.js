@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   $(window).load(function(){
   $(".typing").typed({
-      strings: ["Once you stop learning", "you start dying."],
+      strings: ["Once you stop learning", "you start dying"],
       typeSpeed: 50
     });
    });
