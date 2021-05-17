@@ -13,6 +13,15 @@ var Layout = function () {
 
  /* jQuery Pre loader
   -----------------------------------------------*/
+$(function() {
+
+  var h = $(window).height(); //画面の高さを取得  
+
+  $('.preloader').height(h).css('display','block');//ローディング画像を表示
+
+});
+    
+
 $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets
 });
