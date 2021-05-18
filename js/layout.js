@@ -11,19 +11,7 @@ var Layout = function () {
         ) ? true : false);
     }
 
- /* jQuery Pre loader
-  -----------------------------------------------*/
-
-$(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets
-});
-
-
-$(document).ready(function() {
-    
-    
-    
-    
+        
     // handle on page scroll
     var handleHeaderOnScroll = function() {
         if ($(window).scrollTop() > 60) {
