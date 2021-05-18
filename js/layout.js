@@ -11,7 +11,19 @@ var Layout = function () {
         ) ? true : false);
     }
 
-        
+
+    
+$(function(){
+   $(window).on('load',function(){
+     $("#page-loading").delay(1000).fadeOut('slow');
+   });
+   function loaderClose(){
+     $("#page-loading").fadeOut('slow');
+   }
+   setTimeout(loaderClose,10000);
+});
+    
+    
     // handle on page scroll
     var handleHeaderOnScroll = function() {
         if ($(window).scrollTop() > 60) {
