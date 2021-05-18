@@ -94,20 +94,43 @@ span {
 /*---------------------------------------
     Pre Loader Style
 -----------------------------------------*/
-#pageloading-wrap {
-   background: #466bda;
-   width: 100%;
-   height: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   text-align: center;
-   display: table;
-   z-index: 1;
+.is-hide {
+    display: none;
 }
-#pageloading-icon {
-   display: table-cell;
-   vertical-align: middle;
+
+.fadeout-bg {
+    transition-property: opacity;
+    transition-delay: .9s;
+    transition-duration: .8s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeout-loader {
+    transition-property: opacity;
+    transition-delay: .9s;
+    transition-duration: .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loader-bg {
+    background: #00103e;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#loader {
+    height: 120px;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    position: fixed;
+    top: 50%;
+    width: 120px;
 }
 
 /*---------------------------------------
